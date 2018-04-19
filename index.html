@@ -5,10 +5,28 @@
 
 <h1>This is a picture</h1>
 <img src="dog.png" />
+   <script type="text/javascript">
 
+        function picture(){ 
+        var pic = "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr"
+		    document.getElementById('dog').src = pic.replace('100x100', '250x250');
+        document.getElementById('dog').style.display='block';
+		    pic.style.visibility = 'visible';
+
+        }
+
+    </script>
+
+
+</head>
+
+     <img id="dog" src="dog" style="display:none;" />
+    <button onclick="picture()">Show</button>
+  
 <footer> OKN Team</footer>
 
 
 </body>
 </html>
+
 
