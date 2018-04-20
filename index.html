@@ -4,27 +4,23 @@
 <body style="text-align:center">
 
 <h1>This is a picture</h1>
-<img src="dog.png" />
-   <script type="text/javascript">
-
-        function picture(){ 
-        var pic = "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr"
-		    document.getElementById('dog').src = pic.replace('100x100', '250x250');
-        document.getElementById('dog').style.display='block';
-		    pic.style.visibility = 'visible';
-
-        }
-
-    </script>
+<img id="dog" onclick="changeImage()" src="dog.png" />
+<script>
+function changeImage() {
+    var image = document.getElementById('dog');
+    if (image.src.match("change")) {
+        image.src = "dog.png";
+    } else {
+        image.src = "cat.png";
+    }
+}
+</script>
 <h2> 
-<img id="dog" src="dog" style="display:none;" height="400px" />
-<button onclick="picture()">Show</button> 
+<button onclick="changeImage()">Show</button> 
 	</h2>
 
 
-</head>
 
-  
 <footer> OKN Team</footer>
 
 
