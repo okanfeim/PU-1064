@@ -30,7 +30,7 @@ class UserController{
             return;
         }
 
-        if(data.password.length < 8){
+        if(data.password.length < 6){
             showPopup('error','password length must be minimum 6 characters');
             return;
         }
