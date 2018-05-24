@@ -1,0 +1,70 @@
+.new-post-title {
+    width: 250px;
+    font: 30px "Bebas Neue";
+}
+
+#editor-title {
+    color: black;
+    font-weight: bold;
+    font: 40px "Bebas Neue";
+    text-align: center;
+}
+
+#post-form {
+    background: #ffd59b;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    font: 25px "Bebas Neue";
+    margin: 10px;
+}
+
+.single-element-form {
+    display: inline-block;
+    width: 40%;
+    padding-top: 10px;
+}
+
+.content-field {
+    resize: none;
+    border: 5px solid #000000;
+    outline: none;
+    width: 550px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: left;
+    font: 20px "Arial Black";
+    padding: 10px;
+}
+
+.content-field:focus {
+    font: 20px Ebrima;
+    font-weight: 100;
+    outline: none;
+    border: 3px solid #ffffff;
+}
+label.filebutton {
+    width:120px;
+    height:40px;
+    overflow:hidden;
+    position:relative;
+    background-color:black;
+}
+
+label span input {
+    z-index: 999;
+    line-height: 0;
+    font-size: 50px;
+    position: absolute;
+    top: -2px;
+    left: -700px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+    _cursor: hand;
+    margin: 0;
+    padding:0;
+}
+
+
+
